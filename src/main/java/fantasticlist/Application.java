@@ -1,11 +1,12 @@
-package fansticlist;
+package fantasticlist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 
-import fansticlist.interceptors.AccessTokenInterceptor;
+import fantasticlist.domain.User;
+import fantasticlist.interceptors.AccessTokenInterceptor;
 
 @SpringBootApplication
 public class Application extends WebMvcAutoConfigurationAdapter{

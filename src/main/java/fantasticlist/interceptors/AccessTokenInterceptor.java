@@ -1,4 +1,4 @@
-package fansticlist.interceptors;
+package fantasticlist.interceptors;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,7 +12,7 @@ public class AccessTokenInterceptor extends HandlerInterceptorAdapter{
 			HttpServletResponse response, Object handler) throws Exception {
 		String atoken = request.getParameter("atoken");
 		System.out.println("get atoken " + atoken);
-		if (atoken == null || atoken.length() > 0) {
+		if (atoken == null || atoken.length() == 0) {
 			return false;
 		}
 		return super.preHandle(request, response, handler);
